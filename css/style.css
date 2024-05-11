@@ -55,9 +55,9 @@ h6 {
 	letter-spacing: 0;
 	font-weight: normal;
 	position: relative;
-	padding: 0 0 10px 0;
+	padding: 0 0 5px 0;
 	font-weight: normal;
-	line-height: 120% !important;
+	line-height: 100% !important;
 	color: #1f1f1f;
 	margin: 0
 }
@@ -408,7 +408,7 @@ HEADER
 -------------------------------------------------------------------*/
 
 .header_top {
-    min-height: 98px;
+    min-height: 80px;
     padding: 8px 0;
     background: #fff;
 }
@@ -459,7 +459,7 @@ a.join_bt:focus {
 }
 
 .logo_section {
-    width: 33.33%;
+    width: 30%;
 }
 
 .logo_main {
@@ -483,9 +483,7 @@ a.join_bt:focus {
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: auto 100%;
-    width: 100%;
 }
-
 .section {
     float: left;
     width: 100%;
@@ -895,9 +893,9 @@ button#sidebarCollapse {
 }
 
 .slide_text h6 {
-    font-size: 25px;
+    font-size: 20px;
     color: #272f43;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 300;
 }
 
@@ -2378,9 +2376,9 @@ ul.social_icon li {
 .readmore_bt {
     color: #fff;
     font-size: 17px;
-    font-weight: 200;
+    font-weight: 300;
     width: 200px;
-    height: 65px;
+    height: 50px;
     background: #272f43;
     float: left;
     text-align: center;
@@ -2391,7 +2389,7 @@ ul.social_icon li {
 
 .readmore_bt i {
     color: #00cc99;
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     top: 4px;
     left: 2px;
