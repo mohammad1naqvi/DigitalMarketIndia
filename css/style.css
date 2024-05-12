@@ -465,7 +465,10 @@ a.join_bt:focus {
 .logo_main {
     padding: 25px 0 0;
 }
-
+.logo_main img{
+	height: 20%;
+	width: 20%;
+}
 .top-header .navbar {
     padding: 0;
     min-height: 60px;
@@ -662,7 +665,6 @@ a.navbar-brand {
     position: relative;
     width: 70%;
 }
-
 .menu_orange_section::after {
 
     width: 70px;
@@ -1964,14 +1966,15 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-box {
-    background: #262e41;
+    background: #6769D0
+    ;
     padding: 70px 0;
 }
 
 .footer-box .footer-company-name {
 	text-align: center;
 	margin: 0px;
-	color: #333;
+	color: black;
 	font-size: 13px;
 	font-weight: 400;
 	padding-top: 2px;
@@ -2365,21 +2368,21 @@ ul.social_icon li {
     font-weight: 700;
 }
 
-.slide_text .readmore_bt {
+.slide_text ._bt {
     margin-top: 45px;
 }
 
 .dark_blue_layout {
-    background: #262e41;
+    background: #B8B5E7;
 }
 
 .readmore_bt {
     color: #fff;
-    font-size: 17px;
-    font-weight: 300;
-    width: 200px;
-    height: 50px;
-    background: #272f43;
+    font-size: 20px;
+    font-weight: 400;
+    width: 220px;
+    height: 65px;
+    background: #6769D0;
     float: left;
     text-align: center;
     line-height: 65px;
@@ -2394,9 +2397,8 @@ ul.social_icon li {
     top: 4px;
     left: 2px;
 }
-
 .readmore_bt:hover,.readmore_bt:focus {
-	background-color: #fc301e;
+	background-color: #A164CB;
 	color: #fff;
 }
 
@@ -2420,13 +2422,14 @@ ul.social_icon li {
     padding-top: 2px;
 }
 
-.footer_bottom p.crp a {
+.footer_bottom p.crp {
 	color: #fff;
+	transition: 1s;
+	font-size: 20px;
 }
 
-.footer_bottom p.crp a:hover,
-.footer_bottom p.crp a:focus {
-	color: #fc3726;
+.footer_bottom p.crp:hover{
+	color: #B8B5E7;
 }
 
 .footer_menu ul {
@@ -2459,7 +2462,7 @@ ul.social_icon li {
 }
 
 .newsletter_form button {
-    background: #d66c0b;
+    background: black;
     color: #fff;
     border: none;
     font-size: 14px;
@@ -2693,19 +2696,19 @@ ul.bottom_menu li {
     width: 210px;
     height: 60px;
     border: none;
-    font-size: 20px;
+    font-size: 22px;
     color: #fff;
     line-height: 62px;
     cursor: pointer;
     transition: ease all 0.5s;
-    background: #ef4023;
+    background: #3670D6;
     text-transform: none;
 }
 
 .contact_form_inner button:hover,
 .contact_form_inner button:focus {
     color: #fff;
-    background: #050000;
+    background: #B8B5E7;
 }
 
 /** sidebar **/
@@ -2898,8 +2901,8 @@ form.news_submit_form .field button {
     border: none;
     float: left;
     margin: 0;
-    background: #ef4023;
-    color: #fff;
+    background: #A164CB;
+    color: black;
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
@@ -2946,7 +2949,7 @@ a.readmore_bt::after {
 }
 
 .theme_color_bg {
-	background: #fc3726;
+	background: #3670D6;
 }
 
 footer.footer-box .heading_main h2 {
