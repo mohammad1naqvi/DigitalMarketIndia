@@ -1,6 +1,8 @@
 /* only small desktops */
 /* tablets */
-
+*{
+    box-sizing: border-box;
+}
 @media (min-width: 992px) and (max-width: 1500px) {
 
 .pogoSlider-slide {
@@ -298,7 +300,18 @@ header #sidebarCollapse img {
     font-size: 25px;
     margin-right: 20px;
 } 
-
+#map_form_container{
+  flex-wrap: wrap;
+  height: 1250px;
+}
+#formContainer{
+    height: 40%;
+    width: 100%;
+}
+#mapContainer{
+    width: 100%;
+    height: 55%;
+}
 }
 
 /* mobile or only mobile */
@@ -479,11 +492,30 @@ header #sidebarCollapse img {
         top: -52px;
         right: 20px;
     }
+    #cardContainer{
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+    }
+    .cards{
+        margin: 20px;
+        height:520px;
+        width: 95%;
+        box-sizing: border-box;
+    }
     button#sidebarCollapse {
         background: transparent;
         float: right;
         margin: 0;
         padding: 0;
+    }
+    div .feature_box{
+        background-color: #6769D0;
+        color: white;
+    }
+    div .feature_box:hover{
+        background-color: white;
+        color: #6769D0;
     }
     .logo_main img {
         width: 135px;
@@ -732,7 +764,18 @@ form.news_submit_form .field button {
     top: 20px;
 
 }
-
+#map_form_container{
+    flex-wrap: wrap;
+    height: 1250px;
+  }
+  #formContainer{
+      height: 40%;
+      width: 100%;
+  }
+  #mapContainer{
+      width: 100%;
+      height: 55%;
+  }
 .heading_main h2 {
     text-align: center;
     width: 100%;
@@ -746,6 +789,9 @@ form.news_submit_form .field button {
     margin-top: 35px !important;
     float: left;
 }
-
+#portfolio iframe{
+    width:100vw;
+    height: 300px;
+}
 }
  

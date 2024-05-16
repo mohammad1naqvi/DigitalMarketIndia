@@ -41,7 +41,7 @@ if (empty($_POST["message"])) {
 
 
 $EmailTo = "digitalmarketindia1@gmail.com";
-$Subject = "New Message Received";
+$Subject = "You have got a new mail..";
 
 // prepare email body text
 $Body = "";

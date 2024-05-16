@@ -1,7 +1,9 @@
 /*------------------------------------------------------------------ 
     IMPORT FONTS 
 -------------------------------------------------------------------*/
-
+*{
+	box-sizing: border-box;
+}
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
@@ -474,9 +476,114 @@ a.join_bt:focus {
     min-height: 60px;
     float: left;
 }
-
-.top-header {
+#cardContainer{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+}
+#introText{
+	font-size: 15px;
+	color: #A164CB;
+	margin: 15px;
+	font-weight: 500;
+	position: absolute;
+	bottom: 5px;
+	line-height: 18px;
+	font-family: 'Raleway', sans-serif;
+}
+#imgBack{
+	height: 30%;
+	width: 100%;
+	background-color: #A164CB;
+	top: 0;
+	position: absolute;
+	border-radius: 10px 10px 0px 0px;
+}
+.cards{
+	height: 85%;
+	width: 35%;
+	border-radius: 10px;
+	position: relative;
+	box-sizing: border-box;
+	transition: 0.5s;
+	border: 0.5px solid gray;
+}
+.cards:hover{
+	box-shadow: 5px 10px 20px #A164CB;
+}
+.fText{
+	font-size: 32px;
+	position: absolute;
+	right: 15px;
+	top: 30px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+.role{
+	font-size: 20px;
+	position: absolute;
+	right: 20px;
+	color: white;
+	bottom: 37%;
+	font-family: 'Raleway', sans-serif;
+}
+.cards img{
     position: absolute;
+    top: 0px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid grey;
+    margin: 0px auto;
+    margin-top: 5%;
+    margin-left: 3%;
+    background-color: white;
+}
+#portfolio{
+	height: auto;
+	width: 100%;
+	margin: 50px 0px;
+}
+#portfolio h1{
+	font-size: 40px;
+	font-family: 'Raleway', sans-serif;
+	color: #A164CB;
+	text-transform: capitalize;
+	display: inline-block;
+	margin: 60px auto;
+	font-weight: 600;
+	margin-left: 350px;
+}
+.portHeadings{
+	font-size: 25px;
+	margin-left: 60px;
+	color: #A164CB;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+}
+#vidEdEx, #vidRecEx{
+	width: 90%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+      padding-left: 70px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+iframe{
+	height: 300px;
+	width: 44%;
+	margin: 30px;
+	border-radius: 10px;
+}
+.top-header {
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -657,7 +764,7 @@ a.navbar-brand {
 }
 
 .theme_color {
-	color: #fc301e;
+	color: #6769D0;
 }
 
 .menu_orange_section {
@@ -789,9 +896,27 @@ button#sidebarCollapse {
 	position: relative;
 	z-index: 3;
 }
-
+#aboutSection{
+	padding: 50px;
+}
+#Who{
+	text-align: center;
+	font-size: 45px;
+	position: relative;
+	top: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+}
+#intro{
+	margin:20px;
+	position: relative;
+	top: 50px;
+	font-weight: 400;
+	font-size: 18px;
+}
 .lbox-details a.btn:hover {
-	background: #fc301e;
+	background: #3670D6;
 }
 
 .pogoSlider-nav-btn {
@@ -802,7 +927,7 @@ button#sidebarCollapse {
 }
 
 .pogoSlider-nav-btn--selected {
-	background: #fc301e !important;
+	background: #3670D6;
 }
 
 .pogoSlider--navBottom .pogoSlider-nav {
@@ -956,11 +1081,14 @@ button#sidebarCollapse {
 }
 
 .feature_box {
-    height: auto;
+    height: 400px;
     box-shadow: 0 0 15px 0 rgba(0,0,0,.10);
     padding: 20px;
     text-align: center;
     transition: ease all 0.5s;
+    box-sizing: border-box;
+    background-color: #6769D0;
+    margin:20px 0px;
 }
 
 .about_section {
@@ -969,19 +1097,19 @@ button#sidebarCollapse {
 
 .feature_box:hover,
 .feature_box:focus {
-   background: #fc301e;
+   background: white;
 }
 
 .feature_box:hover h4,
 .feature_box:focus h4,
 .feature_box:hover p,
 .feature_box:focus p {
-	color: #fff;
+	color: #6769D0;
 }
 
 .feature_box:hover img.default-block,
 .feature_box:focus img.default-block {
-	display: none;
+
 }
 
 .feature_box:hover img.default-none,
@@ -992,12 +1120,14 @@ button#sidebarCollapse {
 .feature_box h4 {
     text-transform: uppercase;
     font-size: 20px;
+    color: white;
 }
 
 .feature_box p {
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
+    color: white;
 }
 
 .about-box {
@@ -1107,7 +1237,7 @@ button#sidebarCollapse {
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	position: relative;
 	overflow: hidden;
-	background: #ef4023;
+	background:  #A164CB;
 	-webkit-transition-property: color;
 	transition-property: color;
 	-webkit-transition-duration: 0.3s;
@@ -1128,7 +1258,7 @@ button#sidebarCollapse {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #ef4023;
+	background: #6769D0;
 	border-radius: 100%;
 	-webkit-transform: scale(0);
 	transform: scale(0);
@@ -2248,6 +2378,7 @@ h3.small_heading {
 }
 
 .margin-bottom_30 {
+	margin-top: 50px;
 	margin-bottom: 30px !important;
 }
 
@@ -2307,11 +2438,6 @@ ul.social_icon li {
     margin: 0 5%;
     box-shadow: 0 0 25px 0 rgba(0,0,0,.1);
     padding: 40px 30px;
-}
-
-#map {
-    height: 100%;
-    min-height: 830px;
 }
 
 .blog_img_popular {
@@ -2643,27 +2769,60 @@ ul.bottom_menu li {
 	border: solid #000 1px;
 	height: 41px;
 }
-
-.contact_section {
-
-    background-image: url("../images/contact_bg.png");
-    background-size: 50% auto;
-    background-repeat: no-repeat;
-    background-position: right center;
-
+#map_form_container{
+	height: 100vh;
+	margin: 20px 0px;
+	background-color: #6769D0;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
 }
-
-.contact_form {
-    background: #fff;
-    background-size: cover;
-    background-position: center center;
-    min-height: auto;
-    padding: 45px 65px 65px;
-    max-width: 770px;
-    margin: 142px 0;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+#formContainer{
+	height: 90%;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 20px;
 }
-
+form{
+	background-color: white;
+	border-radius: 5px;
+	height: 100%;
+	width: auto;
+	padding: 10px;
+}
+input,textarea{
+	border-radius: 5px;
+	text-align: center;
+	width: 100%;
+}
+form button{
+	height: 50px;
+	width: 100px;
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+	background-color: #6769D0;
+	transition: 1s;
+	border: none;
+	border-radius: 5px;
+}
+form button:hover{
+	background-color: #A164CB;
+	color: white;
+}
+#mapContainer{
+	height: 100%;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 20px;
+}
+#map{
+	height: 90%;
+	width: 95%;
+	border-radius: 0;
+	box-sizing: border-box;
+}
 .field input {
 
     width: 100%;
@@ -2676,7 +2835,6 @@ ul.bottom_menu li {
     font-size: 20px;
     font-weight: 300;
     border-bottom: solid #ccc 2px;
-
 }
 
 .field textarea {
@@ -2690,25 +2848,6 @@ ul.bottom_menu li {
     font-size: 20px;
     font-weight: 300;
     border-bottom: solid #ccc 2px;
-}
-
-.contact_form_inner button {
-    width: 210px;
-    height: 60px;
-    border: none;
-    font-size: 22px;
-    color: #fff;
-    line-height: 62px;
-    cursor: pointer;
-    transition: ease all 0.5s;
-    background: #3670D6;
-    text-transform: none;
-}
-
-.contact_form_inner button:hover,
-.contact_form_inner button:focus {
-    color: #fff;
-    background: #B8B5E7;
 }
 
 /** sidebar **/
@@ -2774,12 +2913,14 @@ ul.bottom_menu li {
        font-size: 20px;
        display: block;
        color: #222;
-       font-weight: 300;
+       font-weight: 400;
        letter-spacing: 1px;
+	 margin: 8px;
+	 text-transform: uppercase;
     }
     
     #sidebar ul li a:hover {
-      color: #fc301e;
+      color: #3670D6;
       background: #fff;
     }
     
@@ -2919,7 +3060,7 @@ form.news_submit_form .field button {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(252,48,30,.95);
+    background: #B8B5E7;
     top: -101%;
     display: flex;
     justify-content: center;
@@ -2938,11 +3079,12 @@ form.news_submit_form .field button {
 
 a.readmore_bt::after {
     content: "";
-    width: 185px;
-    height: 15px;
-    background: url('../images/or.png');
+    width: 100%;
+    height: 20px;
+    background-color: #9192e4;
     display: block;
     position: absolute;
+    transform: rotateX('40');
     top: -15px;
     z-index: 1;
     background-size: 100% 100%;
