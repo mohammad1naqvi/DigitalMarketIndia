@@ -2754,7 +2754,10 @@ ul.bottom_menu li {
 #demo .img-responsive {
 	width: 100%;
 }
-
+svg{
+	height: 22px;
+	width: 22px;
+}
 .top-header.fixed-menu .search-btn {
 	background: #111;
 }
@@ -2786,15 +2789,16 @@ ul.bottom_menu li {
 }
 form{
 	background-color: white;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	height: 100%;
 	width: auto;
+	margin-top: 28px;
 	padding: 10px;
 }
 input,textarea{
 	border-radius: 5px;
 	text-align: center;
-	width: 100%;
+	text-transform: capitalize;
 }
 form button{
 	height: 50px;

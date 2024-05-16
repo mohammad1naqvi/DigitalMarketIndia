@@ -793,5 +793,8 @@ form.news_submit_form .field button {
     width:100vw;
     height: 300px;
 }
+#portfolio h1{
+    text-align: left;
+}
 }
  
